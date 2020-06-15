@@ -6,7 +6,8 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'Splash_Example' do
-#  pod 'CoreDI'
+  pod 'Tutorial'
+  pod 'Home'
   pod 'Splash', :path => '../'
 
   target 'Splash_Tests' do

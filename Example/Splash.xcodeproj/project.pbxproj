@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		1915698B586BF9FDB36D1C39 /* Pods-Splash_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splash_Example.debug.xcconfig"; path = "Target Support Files/Pods-Splash_Example/Pods-Splash_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		217046B25DD2A6849BF86FEA /* Splash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Splash.podspec; path = ../Splash.podspec; sourceTree = "<group>"; };
+		217046B25DD2A6849BF86FEA /* Splash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Splash.podspec; path = ../Splash.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		32290CF7371632A9A47507F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		39FB68AC329DC13B188B7377 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		539A97032497A58E001E78E1 /* ViewControllerFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryImpl.swift; sourceTree = "<group>"; };
@@ -279,14 +279,18 @@
 				"${BUILT_PRODUCTS_DIR}/CoreDI/CoreDI.framework",
 				"${BUILT_PRODUCTS_DIR}/CoreLifecycle/CoreLifecycle.framework",
 				"${BUILT_PRODUCTS_DIR}/CoreMVVM/CoreMVVM.framework",
+				"${BUILT_PRODUCTS_DIR}/Home/Home.framework",
 				"${BUILT_PRODUCTS_DIR}/Splash/Splash.framework",
+				"${BUILT_PRODUCTS_DIR}/Tutorial/Tutorial.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreDI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreLifecycle.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMVVM.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Home.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Splash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tutorial.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

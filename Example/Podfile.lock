@@ -9,6 +9,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - Home (0.1.1):
+    - CoreDI
+    - Splash
   - Nimble (7.3.4)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
@@ -16,15 +19,20 @@ PODS:
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
   - Quick (1.2.0)
-  - Splash (0.1.0):
+  - Splash (0.1.1):
+    - CoreDI
+    - Tutorial
+  - Tutorial (0.1.3):
     - CoreDI
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
+  - Home
   - Nimble (~> 7.0)
   - Nimble-Snapshots (~> 6.3.0)
   - Quick (~> 1.2.0)
   - Splash (from `../`)
+  - Tutorial
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -36,6 +44,8 @@ SPEC REPOS:
     - CoreDI
     - CoreLifecycle
     - CoreMVVM
+    - Home
+    - Tutorial
 
 EXTERNAL SOURCES:
   Splash:
@@ -46,11 +56,13 @@ SPEC CHECKSUMS:
   CoreLifecycle: 6badd5cdb478469147b95910347467dfc3cbad0e
   CoreMVVM: 17e082f71fe2a0d47426463291022e742924c4fd
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Home: 41d981213cd95d929558ba848fb5ae3e08a070e5
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  Splash: 50cfbb961fb137b7c0974d8c1156944cbc020361
+  Splash: 08272cbea1daa89b78e1c14051deb8b159e1548b
+  Tutorial: ac6d3a92a14b191aa49456152bc868e9931c6012
 
-PODFILE CHECKSUM: c487e2826f34210431128bc2b1c4448b8cfd9237
+PODFILE CHECKSUM: 08b6637250801c6154f2a32ec01f7c697f327e48
 
 COCOAPODS: 1.9.3

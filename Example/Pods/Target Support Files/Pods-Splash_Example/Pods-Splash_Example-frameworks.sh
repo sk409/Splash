@@ -200,13 +200,17 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CoreDI/CoreDI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CoreLifecycle/CoreLifecycle.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CoreMVVM/CoreMVVM.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Home/Home.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Splash/Splash.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Tutorial/Tutorial.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CoreDI/CoreDI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CoreLifecycle/CoreLifecycle.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CoreMVVM/CoreMVVM.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Home/Home.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Splash/Splash.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Tutorial/Tutorial.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

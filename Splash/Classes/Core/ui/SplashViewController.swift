@@ -1,7 +1,7 @@
 import UIKit
 import CoreDI
 import CoreLifecycle
-//import TutorialCore
+import Tutorial
 
 // TODO: 確認
 // MvvmFragmentに相当するクラスを継承していません
@@ -9,10 +9,14 @@ open class SplashViewController: LifecycleObservableViewController, SplashAction
     
     private(set) public var viewModel: SplashViewModel?
     
+    private let viewControllerFactory: ViewControllerFactory
+    
     public init(
-        viewModelFactor: ViewModelFactory
+        viewModelFactor: ViewModelFactory,
+        viewControllerFactory: ViewControllerFactory
     ) {
         viewModel = viewModelFactor.create(SplashViewModel.self)
+        self.viewControllerFactory = viewControllerFactory
         let pod = Bundle(for: SplashViewController.self)
         let path = pod.path(forResource: "Splash", ofType: "bundle")!
         let bundle = Bundle(path: path)
@@ -34,10 +38,10 @@ open class SplashViewController: LifecycleObservableViewController, SplashAction
     }
     
     open func showTutorial() {
-//        guard let navigationController = (navigationController as? NavigationController) else {
-//            return
-//        }
-//        navigationController.pushViewController(TutorialViewController.self)
+        guard let tutorialViewController = viewControllerFactory.instantiate(TutorialViewController.self) else {
+            return
+        }
+        navigationController?.pushViewController(tutorialViewController, animated: true)
     }
     
     private func setupViewModel() {

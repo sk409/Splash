@@ -1,7 +1,7 @@
 {
   "name": "Splash",
-  "version": "0.1.0",
-  "summary": "A short description of Splash.",
+  "version": "0.1.1",
+  "summary": "Splash",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/sk409/Splash",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/sk409/Splash.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -27,6 +27,9 @@
   },
   "dependencies": {
     "CoreDI": [
+
+    ],
+    "Tutorial": [
 
     ]
   },
