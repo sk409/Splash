@@ -1,0 +1,6 @@
+framework module CoreDI {
+  umbrella header "CoreDI-umbrella.h"
+
+  export *
+  module * { export * }
+}

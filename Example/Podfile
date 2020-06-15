@@ -1,0 +1,20 @@
+source 'https://github.com/sk409/CocoaPodSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+
+use_frameworks!
+
+target 'Splash_Example' do
+#  pod 'CoreDI'
+  pod 'Splash', :path => '../'
+
+  target 'Splash_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0'
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+    pod 'Nimble-Snapshots' , '~> 6.3.0'
+  end
+end

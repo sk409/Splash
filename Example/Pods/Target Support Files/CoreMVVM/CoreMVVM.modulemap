@@ -1,0 +1,6 @@
+framework module CoreMVVM {
+  umbrella header "CoreMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}

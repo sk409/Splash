@@ -1,0 +1,34 @@
+{
+  "name": "Splash",
+  "version": "0.1.0",
+  "summary": "A short description of Splash.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sk409/Splash",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sk409": "deepstrap353@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sk409/Splash.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "Splash/Classes/**/*",
+  "resource_bundles": {
+    "Splash": [
+      "Splash/Assets/**/*.xib"
+    ]
+  },
+  "dependencies": {
+    "CoreDI": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}
